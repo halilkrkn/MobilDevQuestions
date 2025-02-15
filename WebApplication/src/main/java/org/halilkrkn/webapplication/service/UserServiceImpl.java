@@ -5,7 +5,6 @@ import lombok.val;
 import org.halilkrkn.webapplication.dto.UserRequest;
 import org.halilkrkn.webapplication.dto.UserMapper;
 import org.halilkrkn.webapplication.dto.UserResponse;
-import org.halilkrkn.webapplication.entity.User;
 import org.halilkrkn.webapplication.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
@@ -26,7 +25,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UserResponse> getAllUsers() {
-        return userRepository.findAll().stream().map(userMapper::toUserResponse).toList();
+        return userRepository.findAll().stream().map(userMapper::fromUserResponse).toList();
     }
 
     @Override

@@ -2,7 +2,7 @@ package org.halilkrkn.webapplication.service;
 
 import org.halilkrkn.webapplication.dto.UserRequest;
 import org.halilkrkn.webapplication.dto.UserResponse;
-import org.halilkrkn.webapplication.entity.User;
+
 
 import java.util.List;
 

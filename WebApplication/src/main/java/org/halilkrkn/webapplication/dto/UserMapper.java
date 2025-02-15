@@ -3,8 +3,6 @@ package org.halilkrkn.webapplication.dto;
 import org.halilkrkn.webapplication.entity.User;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 public class UserMapper {
 
@@ -17,16 +15,12 @@ public class UserMapper {
                 .build();
     }
 
-    public UserResponse toUserResponse(User user) {
+    public UserResponse fromUserResponse(User user) {
         return new UserResponse(
                 user.getId(),
                 user.getName(),
                 user.getEmail(),
                 user.getPhone()
         );
-    }
-
-    public List<UserResponse> toUserResponseList(List<User> users) {
-        return users.stream().map(this::toUserResponse).toList();
     }
 }
