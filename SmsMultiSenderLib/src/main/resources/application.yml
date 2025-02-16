@@ -1,0 +1,14 @@
+spring:
+  application:
+  name: SmsMultiSenderLib
+
+
+sms:
+  username: "5022838195"
+  password: "249f1433ea7c495a8ed2d49822092bc1"
+  originator: ""
+  api-url: "https://xmlapi.mobildev.com"
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
