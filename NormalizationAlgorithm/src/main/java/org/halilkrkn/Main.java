@@ -25,7 +25,7 @@ public class Main {
         System.out.println("Veri Seti: " + list);
         System.out.print("Normalizasyon: [");
         for (int i = 0; i < list.size(); i++) {
-            double normalized = (xmax == xmin) ? 0.0 : (double) (list.get(i) - xmin) / (xmax - xmin);
+            int normalized = (xmax == xmin) ? 0 : (int) (list.get(i) - xmin) / (xmax - xmin);
             System.out.print(normalized);
             if (i < list.size() - 1) {
                 System.out.print(", ");

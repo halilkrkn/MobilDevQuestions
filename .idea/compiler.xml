@@ -32,13 +32,27 @@
         </processorPath>
         <module name="SmsMultiSenderLib" />
       </profile>
+      <profile name="Annotation profile for sms-multisender-lib" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-configuration-processor/unknown/spring-boot-configuration-processor-unknown.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="sms-multisender-lib" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SmsMultiSenderLib" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SmsMultiSenderLib" options="-parameters" />
       <module name="SmsMultiSenderLibrary" options="-parameters" />
       <module name="WebApplication" options="-parameters" />
+      <module name="sms-multisender-lib" options="-parameters" />
     </option>
   </component>
 </project>
