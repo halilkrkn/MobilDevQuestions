@@ -43,7 +43,7 @@ mobildev:
   sms:
     username: "your_username"
     password: "your_password"
-    originator: "your_organitor"
+    originator: "your_originator"
     api-url: https://xmlapi.mobildev.com
 ```
 
