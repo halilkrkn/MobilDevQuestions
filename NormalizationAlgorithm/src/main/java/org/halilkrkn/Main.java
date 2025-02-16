@@ -9,7 +9,7 @@ public class Main {
         List<Integer> numbersList = new ArrayList<>();
 
         // 500 benzersiz sayı elde edilene kadar döner.
-        while (uniqueNumbers.size() < 500) {
+        while (uniqueNumbers.size() < 3) {
             int num = random.nextInt(10000) + 1; // 1 ile 10.000 arasında
             if (uniqueNumbers.add(num)) {
                 numbersList.add(num);
