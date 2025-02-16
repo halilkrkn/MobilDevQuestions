@@ -9,14 +9,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="PrimeDifferenceCalculator" />
       </profile>
-      <profile name="Annotation profile for WebApplication" enabled="true">
+      <profile name="Annotation profile for SmsMultiSenderLibrary" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath>
+        <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="WebApplication" />
+        <module name="SmsMultiSenderLibrary" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SmsMultiSenderLibrary" options="-parameters" />
       <module name="WebApplication" options="-parameters" />
     </option>
   </component>
